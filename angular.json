@@ -17,6 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+        "lodash",
+        "stompjs",
+        "sockjs-client"
+     ],
             "outputPath": "dist/demo-proj",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,6 +32,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
